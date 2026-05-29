@@ -729,3 +729,4 @@ class Command(BaseCommand):
         self.stdout.write(f'Deleting all {model_to_del} objects.')
         if model_to_del:
             exec(f'models.{model_to_del}.objects.all().delete()')
+
